@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <main>
+                 <!--     NAVBAR -->
+    <section>
+      <nav>
+        <ul id="ww" class="topnav">
+          <li id="nav" style="float:left" class="right"><a href="register.html">Register</a></li>
+          <li id="nav" style="float:right" class="right"><a href="login.html" id="a" class="active">Login</a></li>
+        </ul>
+      </nav>
+    </section>
+
+                          <!--     HEADER -->
+    <section>
+      <header>welcome back !</header>
+      <p class="r">Login here</p>
+      
+                     <!--       FORM -->
+      <div>
+        <form action="index.html">
+          <label for="email">Email</label><br>
+          <input type="email" required placeholder="highoncodes@gmail.com"><br><br>
+          <label for="Password">Password</label><br>
+          <input type="password" required placeholder="password" onkeyup='check() ;'
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+          <div>
+            <label><input id="rememberme" name="remember_me" value="remember" type="checkbox" />Remember me</label>
+          </div>
+          <div class="btn0">
+            <a href="register.html" class="btn1">If don't have An Account click Register</a>
+            <button type="submit" class="btn2">Sign In</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+                      <!--   FOOTER -->
+  <footer id="make">&#9400; #TechBabyGirl</footer>
+
+</body>
+
+</html>

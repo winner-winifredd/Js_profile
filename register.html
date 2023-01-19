@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <title>REGISTER</title>
+</head>
+
+<body>
+  <main>
+                                <!--     NAVBAR -->
+    <section>
+      <nav>
+        <ul id="ww" class="topnav">
+          <li id="nav" style="float:left" class="right"><a href="register.html" class="active">Register</a></li>
+          <li id="nav" style="float:right" class="right"><a href="login.html" id="a">Login</a></li>
+        </ul>
+      </nav>
+    </section>
+
+                         <!--     HEADER -->
+    <header>REGISTER HERE</header>
+
+                 <!--     FORM -->
+    <section>
+      <div class="container">
+        <form action="index.html">
+          <label for="first">First Name</label>
+          <input type="text" placeholder="#TechBabyGirl" id="first" required><br><br>
+          <label for="second">Last Name</label>
+          <input type="text" placeholder="HighonCodes" id="second" required><br><br>
+          <label for="phone">phone</label><br>
+          <input type="tel" placeholder="0816086363" required name="phone" maxlength="15" minlength="+"><br><br>
+          <label for="gender">Select Your Gender</label><br>
+          <select class="minimal " required id="gender" [(ngModel)]="name">
+            <option disabled selected hidden value="">Select Your Gender e.g: Male</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select><br><br>
+          <label for="country">Country</label>
+          <input type="text" placeholder="country" required><br><br>
+          <label for="state">State/province</label><br>
+          <input type="text" placeholder="Delta State" required><br><br>
+          <label for="email">Email</label><br>
+          <input type="email" required placeholder="highoncodes@gmail.com"><br><br>
+          <label for="password">password</label><br>
+          <input type="password" required id="password" placeholder="Password" onkeyup='check();'
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+          <label for="confirm">Confirm password</label><br>
+          <input type="password" required id="confirm_password" placeholder="Confirm Password" onkeyup='check() ;'
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+              <!--   FOOTER -->
+  <footer>&#9400; #TechBabyGirl</footer>
+</body>
+
+</html>
